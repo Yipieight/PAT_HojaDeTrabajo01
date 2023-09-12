@@ -9,6 +9,7 @@ void generate(int n, int openCount, int closedCount, string sb, vector<string>& 
     if (openCount < n) {
         sb.append("(");
         generate(n, openCount + 1, closedCount, sb, results);
+
         sb.pop_back();
     }
 
